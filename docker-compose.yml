@@ -1,0 +1,41 @@
+version: '3'
+services:
+  mysql_db:
+    image: mysql
+    container_name: mysql_db
+    build: .
+    env_file: .env
+    # env_file: .env
+    # $HOST
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=db_pinterest
+    ports:
+      - "3306 : 3306"
+    volumes:
+      - mysql_db:/var/lib/mysql
+    networks:
+      - node-network
+  app:
+    depends_on:
+      - mysql_db
+    container_name: pinterest-con
+    environment:
+      - DB_DATABASE= db_pinterest
+      - DB_USER = root
+      - DB_PASS=1234
+      - DB_HOST=mysql_db
+      - DB_DIALECT=mysql
+      - DB_PORT=3306
+    ports:
+      - "8080 : 8080"
+    networks:
+      - node-network
+
+
+
+volumes:
+  mysql_db:
+    driver: local
+networks:
+  node-network: 

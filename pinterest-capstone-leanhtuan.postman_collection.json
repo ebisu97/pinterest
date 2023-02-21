@@ -1,0 +1,506 @@
+{
+	"info": {
+		"_postman_id": "bd8fcda7-6705-4fae-94e8-cae4125a0515",
+		"name": "pinterest-capstone-leanhtuan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25005093"
+	},
+	"item": [
+		{
+			"name": "Trang chủ",
+			"item": [
+				{
+					"name": "get list hình ảnh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2OTA4MDQyLCJleHAiOjE5NjA5MjY0NDJ9.hlv70i-GsMzqqK3_iVrgxfcPnQB8pYH2TOXVm1UI5Uo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2OTA4MDQyLCJleHAiOjE5NjA5MjY0NDJ9.hlv70i-GsMzqqK3_iVrgxfcPnQB8pYH2TOXVm1UI5Uo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/TrangChu/getListHinhAnh?keyword=h",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangChu",
+								"getListHinhAnh"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "h"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trang chi tiết",
+			"item": [
+				{
+					"name": "get thông tin bình luận",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjIwLCJlbWFpbCI6InZxLjI1MDkuMjAwM0BnbWFpbC5jb20iLCJtYXRfa2hhdSI6IiQyYiQxMCRRVFBNWHJ6S1pjbkVyZEFJRS5OV2Z1OURTLzhiVjU5dnNGS0hrZUtrZmpreWZMV2JSS3h4YSIsImhvX3RlbiI6Ik5nw7QgVsSDbiBRdcOibiIsInR1b2kiOjE5LCJhbmhfZGFpX2RpZW4iOiJ2cS5qcGcifSwiaWF0IjoxNjcwNTcyMTM0LCJleHAiOjE2NzA1NzI3MzR9.m3g3LE1USlOnMhYstlhKD9Z6klIfxGJYl99F3BBkiys",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2ODg0MzQ3LCJleHAiOjE5NjA5MDI3NDd9.8VJvuzBOcWAbORHi4lz3zpSKxutnGAe_4dCwB-4Ph9o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/TrangChiTiet/getThongTinhBinhLuan/2",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangChiTiet",
+								"getThongTinhBinhLuan",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get thông tin lưu ảnh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjIwLCJlbWFpbCI6InZxLjI1MDkuMjAwM0BnbWFpbC5jb20iLCJtYXRfa2hhdSI6IiQyYiQxMCRRVFBNWHJ6S1pjbkVyZEFJRS5OV2Z1OURTLzhiVjU5dnNGS0hrZUtrZmpreWZMV2JSS3h4YSIsImhvX3RlbiI6Ik5nw7QgVsSDbiBRdcOibiIsInR1b2kiOjE5LCJhbmhfZGFpX2RpZW4iOiJ2cS5qcGcifSwiaWF0IjoxNjcwNTcyMTM0LCJleHAiOjE2NzA1NzI3MzR9.m3g3LE1USlOnMhYstlhKD9Z6klIfxGJYl99F3BBkiys",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2ODg0MzQ3LCJleHAiOjE5NjA5MDI3NDd9.8VJvuzBOcWAbORHi4lz3zpSKxutnGAe_4dCwB-4Ph9o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/TrangChiTiet/getThongTinLuuAnh/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangChiTiet",
+								"getThongTinLuuAnh",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post thông tin bình luận",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2ODg0MzQ3LCJleHAiOjE5NjA5MDI3NDd9.8VJvuzBOcWAbORHi4lz3zpSKxutnGAe_4dCwB-4Ph9o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hinh_id\":1,\r\n    \"ngay_binh_luan\":\"2023-02-19\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/TrangChiTiet/postThongTinBinhLuan/3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangChiTiet",
+								"postThongTinBinhLuan",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get thông tin ảnh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjIwLCJlbWFpbCI6InZxLjI1MDkuMjAwM0BnbWFpbC5jb20iLCJtYXRfa2hhdSI6IiQyYiQxMCRRVFBNWHJ6S1pjbkVyZEFJRS5OV2Z1OURTLzhiVjU5dnNGS0hrZUtrZmpreWZMV2JSS3h4YSIsImhvX3RlbiI6Ik5nw7QgVsSDbiBRdcOibiIsInR1b2kiOjE5LCJhbmhfZGFpX2RpZW4iOiJ2cS5qcGcifSwiaWF0IjoxNjcwNTcyMTM0LCJleHAiOjE2NzA1NzI3MzR9.m3g3LE1USlOnMhYstlhKD9Z6klIfxGJYl99F3BBkiys",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2ODg0MzQ3LCJleHAiOjE5NjA5MDI3NDd9.8VJvuzBOcWAbORHi4lz3zpSKxutnGAe_4dCwB-4Ph9o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/TrangChiTiet/getThongTinAnh/2",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangChiTiet",
+								"getThongTinAnh",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Người dùng",
+			"item": [
+				{
+					"name": "đăng nhập",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"taikhoan1@gmail.com\",\r\n    \"mat_khau\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/Users/dangNhap",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"Users",
+								"dangNhap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "đăng ký",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"taikhoan3@gmail.com\",\r\n    \"mat_khau\":\"12345\",\r\n    \"ho_ten\":\"Tài khoản test 2\",\r\n    \"tuoi\":26,\r\n    \"anh_dai_dien\":\"tk.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/Users/dangKy",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"Users",
+								"dangKy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cập nhật người dùng",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2OTA4MDQyLCJleHAiOjE5NjA5MjY0NDJ9.hlv70i-GsMzqqK3_iVrgxfcPnQB8pYH2TOXVm1UI5Uo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"capnhattest5@gmail.com\",\r\n    \"ho_ten\":\"cập nhật lần 1\",\r\n    \"tuoi\":20,\r\n    \"anh_dai_dien\":\"tkcn.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/Users/capNhat/5",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"Users",
+								"capNhat",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trang quản lý ảnh",
+			"item": [
+				{
+					"name": "Get thông tin user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2ODg0MzQ3LCJleHAiOjE5NjA5MDI3NDd9.8VJvuzBOcWAbORHi4lz3zpSKxutnGAe_4dCwB-4Ph9o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/TrangQuanLyAnh/getThongTinUser",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangQuanLyAnh",
+								"getThongTinUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get thông tin ảnh đã lưu theo user id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2OTA4MDQyLCJleHAiOjE5NjA5MjY0NDJ9.hlv70i-GsMzqqK3_iVrgxfcPnQB8pYH2TOXVm1UI5Uo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2OTA4MDQyLCJleHAiOjE5NjA5MjY0NDJ9.hlv70i-GsMzqqK3_iVrgxfcPnQB8pYH2TOXVm1UI5Uo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/TrangQuanLyAnh/getDanhSachAnhDaLuuTheoUser/3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangQuanLyAnh",
+								"getDanhSachAnhDaLuuTheoUser",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get thông tin ảnh đã tạo theo user id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjUsImVtYWlsIjoidGFpa2hvYW4zQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJFpMSDMyMHpsc3hJdkYwTHNSTHJVUHVySDVlb0V3ek93bDJZejJaUVE5a1lrdE53VFBLM3IyIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QgMyIsInR1b2kiOjI2LCJhbmhfZGFpX2RpZW4iOiJ0ay5qcGcifSwiaWF0IjoxNjc2ODI5MzQ1LCJleHAiOjE5NjA4NDc3NDV9.jnyUqIfgiINddq6lNu7hP8fq-JkcV37MPS-iHCPHyGQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/TrangQuanLyAnh/getDanhSachAnhDaTaoTheoUser/5",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangQuanLyAnh",
+								"getDanhSachAnhDaTaoTheoUser",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Xóa hình",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjYsImVtYWlsIjoidGFpa2hvYW5AZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkM2hPSmp3RnFlbndpNnllbzVkQ1NrT2N2NzdnOS44OWF6YjU5ck42WTlMUDg3YWVPUDJ6T2EiLCJob190ZW4iOiJUw6BpIGtob-G6o24iLCJ0dW9pIjoxMiwiYW5oX2RhaV9kaWVuIjoidGsuanBnIn0sImlhdCI6MTY3MTE3ODM1MiwiZXhwIjoxNjcxMzUxMTUyfQ.vJi4owE35sKa2_xfOq4tu8vn75inNcJC-QdgIa855_A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/TrangQuanLyAnh/deleteAnh/20",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangQuanLyAnh",
+								"deleteAnh",
+								"20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trang thêm ảnh",
+			"item": [
+				{
+					"name": "thêm ảnh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjMsImVtYWlsIjoidGFpa2hvYW4xQGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJE9KbW1QYUM1RENaalNJMDdmbTM3ZHVIaWwyVzZIa0RZMUJJVjIvbllRRUpCS0MxNExWWVVxIiwiaG9fdGVuIjoiVMOgaSBraG_huqNuIHRlc3QiLCJ0dW9pIjoxMiwiYW5oX2RhaV9kaWVuIjoidGsuanBnIn0sImlhdCI6MTY3Njk1NTYwMCwiZXhwIjoxOTYwOTc0MDAwfQ.MuuIBOEpuAODVR02WK8ePVsnr2ZGRfiiLm97vI4kcI8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dataUpload",
+									"type": "file",
+									"src": "/C:/Users/ADMIN/Downloads/download-_1_.jpg"
+								},
+								{
+									"key": "ten_hinh",
+									"value": "huhu",
+									"type": "text"
+								},
+								{
+									"key": "mo_ta",
+									"value": "ai cho toi luong tam",
+									"type": "text"
+								},
+								{
+									"key": "hinh_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/api/TrangThemAnh/themAnh?nguoiDung=3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"TrangThemAnh",
+								"themAnh"
+							],
+							"query": [
+								{
+									"key": "nguoiDung",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
